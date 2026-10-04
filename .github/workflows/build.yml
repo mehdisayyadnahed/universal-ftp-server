@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up JDK` ثانیه‌ای قبل از اجرای گریدل ساخته می‌شوند، پروسه بدون هیچ خطایی پیش خواهد رفت. 17
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
@@ -23,3 +23,26 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
 
       - name: Auto-create missing configs & wrapper
+        run: |
+          if [ ! -f ".env.example" ]; then
+            echo 'GEMINI_API_KEY=""' > .env.example
+          fi
+          if [ ! -f ".env" ]; then
+            echo 'GEMINI_API_KEY="AIzaSyTestKeyForBuild"' > .env
+          fi
+          if [ ! -f "debug.keystore" ]; then
+            keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+          fi
+          if [ ! -f "gradlew" ]; then
+            gradle wrapper
+          fi
+          chmod +x gradlew
+
+      - name: Build with Gradle
+        run: ./gradlew assembleDebug
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
