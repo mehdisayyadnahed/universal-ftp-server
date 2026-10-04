@@ -1,0 +1,7 @@
+{
+  "name": "UFTP Server",
+  "description": "Android FTP Server with support for Wi-Fi, Hotspot, USB Tethering, and Bluetooth Network, custom ports, credentials, and storage location selection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
