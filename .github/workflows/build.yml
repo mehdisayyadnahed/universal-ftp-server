@@ -22,16 +22,26 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
 
-      - name: Generate Wrapper if missing
+      - name: Auto-create missing configs & wrapper
         run: |
+          # ساخت گرادل در صورت نبودن
           if [ ! -f "gradlew" ]; then
             gradle wrapper
           fi
           chmod +x gradlew
 
-      - name: Create debug keystore
-        run: |
-          keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+          # ساخت فایل‌های کانفیگ
+          if [ ! -f ".env.example" ]; then
+            echo 'GEMINI_API_KEY=""' > .env.example
+          fi
+          if [ ! -f ".env" ]; then
+            echo 'GEMINI_API_KEY="AIzaSyTestKeyForBuild"' > .env
+          fi
+
+          # ساخت کلید امضا
+          if [ ! -f "debug.keystore" ]; then
+            keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+          fi
 
       - name: Build with Gradle
         run: ./gradlew assembleDebug
