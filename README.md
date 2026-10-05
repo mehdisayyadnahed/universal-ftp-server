@@ -1,6 +1,6 @@
 <div align="center">
 
-  # 📡 Universal FTP & SFTP Server (UFTP)
+  # 📡 Universal FTP Server (UFTP)
   ### سرور بومی و پرسرعت انتقال فایل اندروید (FTP و SFTP) از طریق کابل، هات‌اسپات، وای‌فای و بلوتوث
   ### Native High-Speed Android FTP & SFTP Server over USB, Hotspot, Wi-Fi & Bluetooth
 
