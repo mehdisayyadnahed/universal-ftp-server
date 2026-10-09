@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- App Icon Placeholder -->
-  <img src="path/to/icon.png" alt="UFTP Icon" width="120" height="120" />
+  <img src="universal_ftp_server_icon.svg" alt="Universal FTP Server Icon" width="120" height="120" />
 
   <h1>📡 Universal FTP Server (UFTP)</h1>
 
@@ -20,7 +20,7 @@
   <br />
 
   <!-- App Screenshot Placeholder -->
-  <img src="path/to/screenshot.png" alt="UFTP Screenshot" width="340" />
+  <img src="Screenshot.png" alt="Universal FTP Server Screenshot" width="340" />
 
 </div>
 
