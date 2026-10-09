@@ -3,7 +3,7 @@
   <!-- App Icon Placeholder -->
   <img src="universal_ftp_server_icon.svg" alt="Universal FTP Server Icon" width="120" height="120" />
 
-  <h1>📡 Universal FTP Server (UFTP)</h1>
+  <h1>Universal FTP Server</h1>
 
   <h3>سرور بومی و پرسرعت انتقال فایل اندروید (FTP و SFTP) از طریق کابل، هات‌اسپات، وای‌فای و بلوتوث</h3>
   <p><strong>Native High-Speed Android FTP & SFTP Server over USB, Hotspot, Wi-Fi & Bluetooth</strong></p>
