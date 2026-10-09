@@ -1,14 +1,26 @@
 <div align="center">
 
-  # 📡 Universal FTP Server (UFTP)
-  ### سرور بومی و پرسرعت انتقال فایل اندروید (FTP و SFTP) از طریق کابل، هات‌اسپات، وای‌فای و بلوتوث
-  ### Native High-Speed Android FTP & SFTP Server over USB, Hotspot, Wi-Fi & Bluetooth
+  <!-- App Icon Placeholder -->
+  <img src="path/to/icon.png" alt="UFTP Icon" width="120" height="120" />
 
-  [![Built with Google AI Studio](https://img.shields.io/badge/Built%20with-Google%20AI%20Studio-4285F4?style=flat&logo=google&logoColor=white)](https://ai.google.dev/)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-2.2.10-7F52FF?style=flat&logo=kotlin&logoColor=white)](https://kotlinlang.org)
-  [![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-BOM%202024.09.00-4285F4?style=flat&logo=android&logoColor=white)](https://developer.android.com/jetpack/compose)
-  [![Android](https://img.shields.io/badge/Android-Min%20SDK%2024%20|%20Target%2036-3DDC84?style=flat&logo=android&logoColor=white)](https://android.com)
-  [![Protocol](https://img.shields.io/badge/Protocols-FTP%20%7C%20SFTP%20(SSH)-orange?style=flat)](#)
+  <h1>📡 Universal FTP Server (UFTP)</h1>
+
+  <h3>سرور بومی و پرسرعت انتقال فایل اندروید (FTP و SFTP) از طریق کابل، هات‌اسپات، وای‌فای و بلوتوث</h3>
+  <p><strong>Native High-Speed Android FTP & SFTP Server over USB, Hotspot, Wi-Fi & Bluetooth</strong></p>
+
+  <!-- Badges -->
+  <p>
+    <a href="https://ai.google.dev/"><img src="https://img.shields.io/badge/Built%20with-Google%20AI%20Studio-4285F4?style=flat&logo=google&logoColor=white" alt="Built with Google AI Studio" /></a>
+    <a href="https://kotlinlang.org"><img src="https://img.shields.io/badge/Kotlin-2.2.10-7F52FF?style=flat&logo=kotlin&logoColor=white" alt="Kotlin" /></a>
+    <a href="https://developer.android.com/jetpack/compose"><img src="https://img.shields.io/badge/Jetpack%20Compose-BOM%202024.09.00-4285F4?style=flat&logo=android&logoColor=white" alt="Jetpack Compose" /></a>
+    <a href="https://android.com"><img src="https://img.shields.io/badge/Android-Min%20SDK%2024%20%7C%20Target%2036-3DDC84?style=flat&logo=android&logoColor=white" alt="Android" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/Protocols-FTP%20%7C%20SFTP%20(SSH)-orange?style=flat" alt="Protocol" /></a>
+  </p>
+
+  <br />
+
+  <!-- App Screenshot Placeholder -->
+  <img src="path/to/screenshot.png" alt="UFTP Screenshot" width="340" />
 
 </div>
 
