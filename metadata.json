@@ -1,8 +1,0 @@
-{
-  "name": "Universal FTP Server ‌Branch",
-  "description": "Android FTP Server with support for Wi-Fi, Hotspot, and USB Tethering, custom ports, credentials, and storage location selection.",
-  "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
-}
